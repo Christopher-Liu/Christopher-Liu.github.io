@@ -1,0 +1,160 @@
+body{
+  background: #D7D8D6
+}
+
+.container{
+  margin: auto;
+  width: 90%;
+  max-width: 1100px;
+  overflow: hidden;
+  font-family: Arial;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+section{
+  max-width: 1150px;
+  margin: auto;
+}
+
+/* CSS settings for the header (top ofthe page) */
+header{
+  padding: 10px 0 10px 0;
+  background: #282828;
+  color: #FFFFFF;
+}
+
+header a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+    /* This is to create a hover state for the nav-bar 
+       links*/
+header a:hover{
+  font-weight: bold;
+}
+
+header nav{
+  float: right;
+  margin: 10px;
+}
+
+header li{
+  display: inline;
+  padding: 0 10px;
+  float: left;
+}
+
+header #logo{
+  float: left;
+}
+
+header #logo h1{
+  margin: 0;
+}
+
+
+/* CSS styling for the "Acout Me" section */
+#welcome-section{
+  min-height: 300px;
+  background: #FFFFFF;
+}
+
+#welcome-section .container{
+  padding: 1% auto;
+  text-align: center;
+}
+
+#welcome-section .prof-pic{
+  max-width: 240px;
+  border-radius: 50%;
+}
+
+#welcome-section .section-main{
+  padding: 20px 0 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+#welcome-section .main-block{
+  flex: 1;
+}
+
+#welcome-section .main-block .section-blurb{
+  font-size: 1.15em;
+}
+ 
+/* CSS styling for the "About Me* section */
+#about-section{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+
+/* CSS styling for the "Projects" section */
+#project-section{
+  min-height: 350px;
+  background: #80A0C0;
+}
+
+#project-section .section-blurb{
+  margin: 0 auto;
+  max-width: 1000px;
+}
+      
+#project-section .container{
+  text-align: center;
+}
+
+#project-section .project-block{
+  display: inline-block;
+  margin: 0 10px;
+  width: 225px;
+}
+
+#project-section .project-block img{
+  width: 200px;
+  border-radius: 3%;
+}
+
+/* CSS styling for the "Contact Me" section */
+#contact-section{
+  text-align: center;
+  background: #282828;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+#contact-section .container{
+  padding: 0 0 10px 0;
+}
+
+#contact-section p{
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+#contact-section a{
+  color: #FFFFFF;
+}
+
+
+@media(max-width: 768px){
+  header nav,
+  header li,
+  header #logo{
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  
+  
+}
