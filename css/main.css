@@ -10,11 +10,6 @@ body{
   font-family: Arial;
 }
 
-ul{
-  padding: 0;
-  margin: 0;
-}
-
 section{
   max-width: 1150px;
   margin: auto;
@@ -42,6 +37,11 @@ header a:hover{
 header nav{
   float: right;
   margin: 10px;
+}
+
+header ul{
+  padding: 0;
+  margin: 0;
 }
 
 header li{
@@ -97,6 +97,10 @@ header #logo h1{
   max-width: 800px;
 }
 
+#about-section ul{
+  margin: -2% 0 15px 0;
+  text-align: center;
+}
 
 /* CSS styling for the "Projects" section */
 #project-section{
