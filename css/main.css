@@ -1,7 +1,7 @@
 /* main.css */ 
 
 body{
-  background: #D7D8D6
+  background: #FFFFFF
 }
 
 .container{
@@ -64,7 +64,6 @@ header #logo h1{
 /* CSS styling for the "Acout Me" section */
 #welcome-section{
   min-height: 300px;
-  background: #FFFFFF;
 }
 
 #welcome-section .container{
@@ -106,7 +105,6 @@ header #logo h1{
 
 /* CSS styling for the "Projects" section */
 #project-section{
-  min-height: 350px;
   background: #80A0C0;
 }
 
@@ -131,23 +129,22 @@ header #logo h1{
 }
 
 /* CSS styling for the "Contact Me" section */
-#contact-section{
+footer{
   text-align: center;
   background: #282828;
   color: #FFFFFF;
   font-size: 12px;
-}
-
-#contact-section .container{
+  overflow: hidden;
+  font-family: Arial;
   padding: 0 0 10px 0;
 }
 
-#contact-section p{
+footer p{
   margin: 0 auto;
   max-width: 700px;
 }
 
-#contact-section a{
+footer a{
   color: #FFFFFF;
 }
 
