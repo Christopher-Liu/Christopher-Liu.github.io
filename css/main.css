@@ -32,32 +32,17 @@ header a{
 
     /* This is to create a hover state for the nav-bar 
        links*/
-header a:hover{
-  font-weight: bold;
-}
-
-header nav{
-  float: right;
-  margin: 10px;
+header #logo{
+  text-align: center;
 }
 
 header ul{
+  text-align: center;
   padding: 0;
-  margin: 0;
 }
 
 header li{
   display: inline;
-  padding: 0 10px;
-  float: left;
-}
-
-header #logo{
-  float: left;
-}
-
-header #logo h1{
-  margin: 0;
 }
 
 
@@ -77,50 +62,28 @@ header #logo h1{
 }
 
 #welcome-section .section-main{
-  padding: 20px 0 0 0;
-  display: flex;
-  justify-content: space-around;
-  flex-flow: wrap;
+  padding: 20px;
 }
 
-#welcome-section .main-block{
+#welcome-section .main-block-one{
   flex: 1;
+  order: 1;
 }
 
-#welcome-section .main-block .section-blurb{
-  font-size: 1.15em;
-}
- 
-/* CSS styling for the "About Me* section */
-#about-section{
-  text-align: center;
-  margin: 0 auto;
-  max-width: 800px;
+#welcome-section .main-block-two{
+  flex: 2;
+  order: 2;
 }
 
-#about-section ul{
-  margin: -2% 0 15px 0;
-  text-align: center;
-}
 
 /* CSS styling for the "Projects" section */
 #project-section{
   background: #80A0C0;
-}
-
-#project-section .section-blurb{
-  margin: 0 auto;
-  max-width: 1000px;
-}
-      
-#project-section .container{
   text-align: center;
 }
 
-#project-section .project-block{
-  display: inline-block;
-  margin: 0 10px;
-  width: 225px;
+#project-section .section-blurb{
+  max-width: 1000px;
 }
 
 #project-section .project-block img{
@@ -149,14 +112,18 @@ footer a{
 }
 
 
-@media(max-width: 768px){
-  header nav,
-  header li,
-  header #logo{
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin: 0;
+
+@media(min-width: 768px){
+  #project-section .thumbnails{
+    display: flex;
+    justify-content: space-around;
   }
-   
+
+  #welcome-section .section-main{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+    align-items: center;
+  }
+  
 }
