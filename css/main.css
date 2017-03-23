@@ -1,4 +1,4 @@
-/* main.css */ 
+/* main.css */
 
 body{
   background: #FFFFFF
@@ -9,7 +9,7 @@ body{
   width: 90%;
   max-width: 1100px;
   overflow: hidden;
-  font-family: Arial;
+  font-family: Tahoma;
 }
 
 section{
@@ -20,7 +20,7 @@ section{
 /* CSS settings for the header (top ofthe page) */
 header{
   padding: 10px 0 10px 0;
-  background: #282828;
+  background: #F59416;
   color: #FFFFFF;
 }
 
@@ -36,6 +36,7 @@ header a:hover{
 
 header #logo{
   text-align: center;
+  font-family: 'Droid Sans' Tahoma;
 }
 
 header ul{
@@ -81,7 +82,7 @@ header li{
 
 /* CSS styling for the "Projects" section */
 #project-section{
-  background: #95B5D5;
+  background: #FAF1E6;
   text-align: center;
 }
 
@@ -97,12 +98,13 @@ header li{
 /* CSS styling for the "Contact Me" section */
 footer{
   text-align: center;
-  background: #282828;
+  background: #3D3C3B;
   color: #FFFFFF;
   font-size: 12px;
   overflow: hidden;
   font-family: Arial;
   padding: 0 0 10px 0;
+  margin: 3% 0 0 0;
 }
 
 footer p{
@@ -129,5 +131,5 @@ footer a{
     flex-flow: wrap;
     align-items: center;
   }
-  
+
 }
