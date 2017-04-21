@@ -1,25 +1,26 @@
 /* main.css */
-
 body{
-  background: #FFFFFF
+  background: #FAF1E6;
+  margin: 0;
 }
 
-.container{
+.section-container{
+  max-width: 1200px;
   margin: auto;
-  width: 90%;
-  max-width: 1100px;
-  overflow: hidden;
-  font-family: Tahoma;
+}  /* This class is supposed to act like Bootstrap's "container" class */
+
+#project-section,
+#about-section,
+#welcome-section .main-section-block{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
 }
 
-section{
-  max-width: 1150px;
-  margin: auto;
-}
 
-/* CSS settings for the header (top ofthe page) */
+/* CSS settings for the header (top of the page) */
 header{
-  padding: 10px 0 10px 0;
+  width: 100%;
+  padding: 10px 0 0 0;
   background: #F59416;
   color: #FFFFFF;
 }
@@ -27,7 +28,6 @@ header{
 header a{
   color: white;
   text-decoration: none;
-  font-size: 16px;
 }
 
 header a:hover{
@@ -36,7 +36,7 @@ header a:hover{
 
 header #logo{
   text-align: center;
-  font-family: 'Droid Sans' Tahoma;
+  font-family: 'Capriola', sans-serif;
 }
 
 header ul{
@@ -47,89 +47,91 @@ header ul{
 header li{
   display: inline;
   padding: 0 5px 0 5px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 
 /* CSS styling for the "Acout Me" section */
 #welcome-section{
-  min-height: 300px;
-}
-
-#welcome-section .container{
-  padding: 1% auto;
-  text-align: center;
+  min-height: 400px;
 }
 
 #welcome-section .prof-pic{
-  max-width: 240px;
+  max-width: 300px;
   border-radius: 50%;
 }
 
-#welcome-section .section-main{
-  padding: 20px;
+#welcome-section .main-section-block{
+  padding: 15px;
 }
 
-#welcome-section .main-block-one{
-  flex: 1;
+.section-name{
+  font-size: 22px;
+}
+
+#welcome-section .block-one{
+  flex: 1.5;
   order: 1;
 }
 
-#welcome-section .main-block-two{
+#welcome-section .block-two{
   flex: 2;
   order: 2;
 }
 
 
+/* CSS styling for the "About" section */
+#about-section hr{
+  width: 80%;
+}
+
+
+
 /* CSS styling for the "Projects" section */
-#project-section{
-  background: #FAF1E6;
-  text-align: center;
-}
-
-#project-section .section-blurb{
-  max-width: 1000px;
-}
-
 #project-section .project-block img{
-  width: 200px;
+  width: 80%;
   border-radius: 3%;
+  margin: 0 0 5% 0;
 }
+
 
 /* CSS styling for the "Contact Me" section */
-footer{
-  text-align: center;
-  background: #3D3C3B;
-  color: #FFFFFF;
-  font-size: 12px;
-  overflow: hidden;
-  font-family: Arial;
-  padding: 0 0 10px 0;
-  margin: 3% 0 0 0;
-}
 
-footer p{
-  margin: 0 auto;
-  max-width: 700px;
-}
-
-footer a{
-  color: #FFFFFF;
-}
 
 
 
 /* Media query for larger-screens */
 @media(min-width: 768px){
-  #project-section .thumbnails{
-    display: flex;
-    justify-content: space-around;
+  header .section-container{
+    padding: 0 5px 0 5px;
   }
 
-  #welcome-section .section-main{
+  .section-name{
+    font-size: 26px;
+  }
+
+  #welcome-section .section-container, header .section-container{
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
     align-items: center;
   }
 
+  #welcome-section{
+    padding: 5%;
+  }
+
+  #project-section .project-block{
+    width: 33%;
+  }
+
+  #project-section .thumbnails img{
+    width: 93%;
+  }
+
+  #project-section .thumbnails{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
