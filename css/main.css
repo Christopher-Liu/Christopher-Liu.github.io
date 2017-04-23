@@ -1,7 +1,7 @@
 /* main.css */
 body{
   background: #FAF1E6;
-  margin: 0;
+  margin: 0 0;
 }
 
 .section-container{
@@ -9,20 +9,28 @@ body{
   margin: auto;
 }  /* This class is supposed to act like Bootstrap's "container" class */
 
+.section-name{
+  font-size: 22px;
+}
+
 #project-section,
 #about-section,
-#welcome-section .main-section-block{
+#welcome-section{
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
 
 
-/* CSS settings for the header (top of the page) */
+/* CSS settings for the header/nav (top of the page) */
 header{
   width: 100%;
-  padding: 10px 0 0 0;
+  padding: 1px 0 1px 0; /* We need at least a bit of padding to make the navbar connected to the jumbotron */
   background: #F59416;
   color: #FFFFFF;
+}
+
+header .section-container{
+  padding: 0 5px 0 5px;
 }
 
 header a{
@@ -41,7 +49,7 @@ header #logo{
 
 header ul{
   text-align: center;
-  padding: 0;
+  padding: 0 0;
 }
 
 header li{
@@ -53,38 +61,47 @@ header li{
 
 /* CSS styling for the "Acout Me" section */
 #welcome-section{
-  min-height: 400px;
+  padding: 20px 2%;
 }
 
-#welcome-section .prof-pic{
-  max-width: 300px;
-  border-radius: 50%;
+#jumbotron{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #F59416;
+  height: 40vh;
 }
 
-#welcome-section .main-section-block{
-  padding: 15px;
+.jumbotron-text{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-align: center; /* This is probably not best practice, but I used a mixture of #jumbotron's flexbox properties and this element's text-align property to horizontally and vertically center the jumbotron text within the jumbotron */
 }
-
-.section-name{
-  font-size: 22px;
-}
-
-#welcome-section .block-one{
-  flex: 1.5;
-  order: 1;
-}
-
-#welcome-section .block-two{
-  flex: 2;
-  order: 2;
-}
-
 
 /* CSS styling for the "About" section */
 #about-section hr{
   width: 80%;
 }
 
+#about-section .flexy-row .prof-pic{
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+#about-section .flexy-row .about-section-block{
+  padding: 15px;
+}
+
+#about-section .flexy-row .block-one{
+  flex: 1.5;
+  order: 1;
+}
+
+#about-section .flexy-row .block-two{
+  flex: 2;
+  order: 2;
+}
 
 
 /* CSS styling for the "Projects" section */
@@ -102,31 +119,35 @@ header li{
 
 /* Media query for larger-screens */
 @media(min-width: 768px){
-  header .section-container{
-    padding: 0 5px 0 5px;
-  }
 
   .section-name{
-    font-size: 26px;
+    font-size: 28px;
   }
 
-  #welcome-section .section-container, header .section-container{
+  #about-section .section-container .flexy-row,
+  header .section-container{
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
     align-items: center;
   }
 
-  #welcome-section{
-    padding: 5%;
+  /* Welcome Section */
+  #jumbotron{
+    height: 70vh;
+  } /* Making the jumbotron appear for large screens only */
+
+  .jumbotron-text{
+    font-size: 3em;
   }
 
+  /* Project section */
   #project-section .project-block{
     width: 33%;
   }
 
   #project-section .thumbnails img{
-    width: 93%;
+    width: 90%;
   }
 
   #project-section .thumbnails{
