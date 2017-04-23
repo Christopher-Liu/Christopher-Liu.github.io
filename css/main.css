@@ -45,6 +45,7 @@ header a:hover{
 header #logo{
   text-align: center;
   font-family: 'Capriola', sans-serif;
+  font-size: .75em;
 }
 
 header ul{
@@ -69,7 +70,7 @@ header li{
   flex-direction: column;
   justify-content: center;
   background: #F59416;
-  height: 40vh;
+  height: 50vh;
 }
 
 .jumbotron-text{
