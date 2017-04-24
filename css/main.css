@@ -55,7 +55,7 @@ header li{
 }
 
 
-/* CSS styling for the "Acout Me" section */
+/* CSS styling for the "About Me" section */
 #welcome-section{
   padding: 20px 2%;
 }
@@ -68,11 +68,31 @@ header li{
   height: 50vh;
 }
 
-.jumbotron-text{
+.jumbotron-content{
   font-family: 'Quicksand', sans-serif;
+  text-align: center; /* This is probably not best practice, but I used a mixture of #jumbotron's flexbox properties and this element's margin property to horizontally and vertically center the jumbotron text within the jumbotron */
+}
+
+.jumbotron-text{
   font-size: 1.5em;
   font-weight: 800;
-  text-align: center; /* This is probably not best practice, but I used a mixture of #jumbotron's flexbox properties and this element's text-align property to horizontally and vertically center the jumbotron text within the jumbotron */
+}
+
+.jumbotron-content a{
+  text-decoration: none;
+  color: black;
+}
+
+.jumbotron-button{
+  font-weight: 600;
+  border-radius: 6px;
+  border: 3px solid white;
+  padding: 4px;
+  transition: background 0.5s ease;
+}
+
+.jumbotron-button:hover{
+  background: white;
 }
 
 
