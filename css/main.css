@@ -15,7 +15,8 @@ body{
 
 #project-section,
 #about-section,
-#welcome-section{
+#welcome-section,
+header ul{
   text-align: center;
   font-family: 'Quicksand', sans-serif;
 }
@@ -27,10 +28,6 @@ header{
   padding: 1px 0 1px 0; /* We need at least a bit of padding to make the navbar connected to the jumbotron */
   background: #F59416;
   color: #FFFFFF;
-}
-
-header .section-container{
-  padding: 0 5px 0 5px;
 }
 
 header a{
@@ -49,14 +46,12 @@ header #logo{
 }
 
 header ul{
-  text-align: center;
   padding: 0 0;
 }
 
 header li{
   display: inline;
   padding: 0 5px 0 5px;
-  font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -80,7 +75,8 @@ header li{
   text-align: center; /* This is probably not best practice, but I used a mixture of #jumbotron's flexbox properties and this element's text-align property to horizontally and vertically center the jumbotron text within the jumbotron */
 }
 
-/* CSS styling for the "About" section */
+
+/* CSS for "About" page */
 #about-section hr{
   width: 80%;
 }
@@ -106,21 +102,25 @@ header li{
 
 
 /* CSS styling for the "Projects" section */
-#project-section .project-block img{
-  width: 80%;
-  border-radius: 3%;
-  margin: 0 0 5% 0;
-}
+
 
 
 /* CSS styling for the "Contact Me" section */
 
 
 
+/* CSS for the photogrids */
+.photogrid .image-block a img{
+  width: 85%;
+  border-radius: 3%;
+  margin: 0 0 5% 0;
+}
+
+
+
 
 /* Media query for larger-screens */
 @media(min-width: 768px){
-
   .section-name{
     font-size: 28px;
   }
@@ -133,27 +133,29 @@ header li{
     align-items: center;
   }
 
-  /* Welcome Section */
+
+  /* Jumbotron for large screens */
   #jumbotron{
     height: 70vh;
-  } /* Making the jumbotron appear for large screens only */
+  }
 
   .jumbotron-text{
     font-size: 3em;
   }
 
-  /* Project section */
-  #project-section .project-block{
-    width: 33%;
-  }
 
-  #project-section .thumbnails img{
-    width: 90%;
-  }
-
-  #project-section .thumbnails{
+  /* Photo grids on large screens */
+  .photogrid{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .image-block{
+    width: 33%;
+  }
+
+  .photogrid .image-block a img{
+    width: 90%;
   }
 }
