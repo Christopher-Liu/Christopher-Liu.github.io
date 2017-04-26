@@ -131,11 +131,37 @@ header li{
 
 
 /* CSS for the photogrids */
+.photogrid .image-block{
+  display: block;
+  position: relative;
+  overflow: hidden;
+}  /* These properties are necessary to make sure the addition of "invisible" captions do not disrupt the flow and positioning of the other elements on the page */
+
 .photogrid .image-block a img{
   width: 85%;
   border-radius: 3%;
-  margin: 0 0 5% 0;
+  margin: 0 0 4% 0;
 }
+
+.photogrid .image-block .caption-text{
+  position: absolute;
+  color: #FFFFFF;
+  background: #2C8C99;
+  left: 7.5%;   /* left and bottom used to position the hover-in caption properly */
+  bottom: 6.5%;
+  width: 85%;   /* Width (size) of the hover-in caption needs to be equal to the width of the thumbnail itself */
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
+  font-size: 1.5em;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.photogrid .image-block:hover .caption-text{
+  opacity: 1;
+}  /* We get the image caption to appear on hover by setting its opacity to 0 originally and to 1 when hovered over */
+
+
 
 
 
@@ -176,7 +202,12 @@ header li{
     width: 33%;
   }
 
-  .photogrid .image-block a img{
+  .photogrid .image-block .caption-text{
+    left: 5%;
+  } /* Need to adjust the left-positioning of the hover-in captions, because the size of the grids on large-screens is a little bit larger */
+
+  .photogrid .image-block a img,
+  .photogrid .image-block .caption-text{
     width: 90%;
   }
 }
