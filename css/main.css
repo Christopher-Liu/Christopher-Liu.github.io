@@ -16,6 +16,7 @@ body{
 #project-section,
 #about-section,
 #welcome-section,
+#contact-section,
 header ul{
   text-align: center;
   font-family: 'Quicksand', sans-serif;
@@ -26,7 +27,7 @@ header ul{
 header{
   width: 100%;
   padding: 1px 0 1px 0; /* We need at least a bit of padding to make the navbar connected to the jumbotron */
-  background: #F59416;
+  background: #2D2E2E;
   color: #FFFFFF;
 }
 
@@ -36,7 +37,7 @@ header a{
 }
 
 header a:hover{
-  color: #80A0C0;
+  color: #2C8C99;
 }
 
 header #logo{
@@ -64,7 +65,7 @@ header li{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #F59416;
+  background: #2C8C99;
   height: 50vh;
 }
 
@@ -87,7 +88,7 @@ header li{
   font-weight: 600;
   border-radius: 6px;
   border: 3px solid white;
-  padding: 4px;
+  padding: 6px;
   transition: background 0.5s ease;
 }
 
