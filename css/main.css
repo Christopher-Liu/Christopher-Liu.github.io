@@ -2,37 +2,35 @@
 body{
   background: #FAF1E6;
   margin: 0 0;
-}
-
-.section-container{
-  max-width: 1200px;
-  margin: auto;
-}  /* This class is supposed to act like Bootstrap's "container" class */
-
-.section-name{
-  font-size: 22px;
-}
-
-#project-section,
-#about-section,
-#welcome-section,
-#contact-section,
-header ul{
-  text-align: center;
+  padding: 0 0;
   font-family: 'Quicksand', sans-serif;
 }
+
+.container{
+  padding: 0 1%;
+  max-width: 900px;
+  margin: 0 auto;
+}  /* This class is supposed to act like Bootstrap's "container" class */
+
+.section-title{
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+
 
 
 /* CSS settings for the header/nav (top of the page) */
 header{
   width: 100%;
-  padding: 1px 0 1px 0; /* We need at least a bit of padding to make the navbar connected to the jumbotron */
-  background: #2D2E2E;
-  color: #FFFFFF;
+  padding: 1px 0 1px 0;
+  text-align: center;
 }
 
 header a{
-  color: white;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -41,9 +39,8 @@ header a:hover{
 }
 
 header #logo{
-  text-align: center;
   font-family: 'Capriola', sans-serif;
-  font-size: .75em;
+  font-size: 1.7em;
 }
 
 header ul{
@@ -55,114 +52,105 @@ header li{
   padding: 0 5px 0 5px;
 }
 
-
-/* CSS styling for the "About Me" section */
-#welcome-section{
-  padding: 20px 2%;
+header hr{
+  width: 90%;
 }
 
-#jumbotron{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: #2C8C99;
-  height: 50vh;
-}
 
-.jumbotron-content{
-  font-family: 'Quicksand', sans-serif;
-  text-align: center; /* This is probably not best practice, but I used a mixture of #jumbotron's flexbox properties and this element's margin property to horizontally and vertically center the jumbotron text within the jumbotron */
-}
-
-.jumbotron-text{
-  font-size: 1.5em;
-  font-weight: 800;
-}
-
-.jumbotron-content a{
-  text-decoration: none;
-  color: black;
-}
-
-.jumbotron-button{
-  font-weight: 600;
-  border-radius: 6px;
-  border: 3px solid white;
-  padding: 6px;
-  transition: background 0.5s ease;
-}
-
-.jumbotron-button:hover{
-  background: white;
-}
 
 
 /* CSS for "About" page */
 #about-section hr{
-  width: 80%;
+  width: 90%;
 }
 
-#about-section .flexy-row .prof-pic{
+#about-section{
+  text-align: center;
+}
+
+.flexy-row .prof-pic{
   max-width: 300px;
   border-radius: 50%;
 }
 
-#about-section .flexy-row .about-section-block{
-  padding: 15px;
+.flexy-row .about-section-block{
+  padding: 2% 2%;
 }
 
-#about-section .flexy-row .block-one{
+.flexy-row .block-one{
   flex: 1.5;
   order: 1;
 }
 
-#about-section .flexy-row .block-two{
+.flexy-row .block-two{
   flex: 2;
   order: 2;
 }
 
+.contact-links{
+  text-align: left;
+}
 
-/* CSS styling for the "Projects" section */
+#tech-logo-section{
+  margin: 20px 0 0 0;
+}
 
-
-
-/* CSS styling for the "Contact Me" section */
+.tech-logo{
+  width: 25%;
+}
 
 
 
 /* CSS for the photogrids */
-.photogrid .image-block{
-  display: block;
-  position: relative;
-  overflow: hidden;
-}  /* These properties are necessary to make sure the addition of "invisible" captions do not disrupt the flow and positioning of the other elements on the page */
-
-.photogrid .image-block a img{
-  width: 85%;
-  border-radius: 3%;
-  margin: 0 0 4% 0;
+.project-block{
+  margin: 0 0 5% 0; /* Space apart the project-blocks vertically */
 }
 
-.photogrid .image-block .caption-text{
-  position: absolute;
-  color: #FFFFFF;
-  background: #2C8C99;
-  left: 7.5%;   /* left and bottom used to position the hover-in caption properly */
-  bottom: 6.5%;
-  width: 85%;   /* Width (size) of the hover-in caption needs to be equal to the width of the thumbnail itself */
-  border-bottom-left-radius: 8%;
-  border-bottom-right-radius: 8%;
+.project-block-component{
+  margin: 0 auto;  /* Centers the image with its caption w/ respect ot the page */
+  width: 95%;
+}
+
+.project-block-component img{
+  width: 100%;
+  display:block; /* Gets rid off odd spacing put under images by HTML */
+  border-radius: .75%;
+}
+
+.project-block-description{
+  background-color: #cdcdcd;
+}
+
+.project-block-description hr{
+  width: 80%;
+}
+
+.project-block-description div{
+  padding: 3% 3%; /* Spaces apart each of the caption items */
+}
+
+.description-title{
   font-size: 1.5em;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  font-weight: 700;
 }
 
-.photogrid .image-block:hover .caption-text{
-  opacity: 1;
-}  /* We get the image caption to appear on hover by setting its opacity to 0 originally and to 1 when hovered over */
+.description-buttons a{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  background: white;
+  color: black;
+  padding: 4px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
 
-
-
+.description-buttons a:hover{
+  background: black;
+  color: white;
+}
 
 
 
@@ -172,42 +160,34 @@ header li{
     font-size: 28px;
   }
 
-  #about-section .section-container .flexy-row,
-  header .section-container{
+  header .container{
     display: flex;
     justify-content: space-between;
     flex-flow: wrap;
     align-items: center;
   }
 
-
-  /* Jumbotron for large screens */
-  #jumbotron{
-    height: 70vh;
-  }
-
-  .jumbotron-text{
-    font-size: 3em;
-  }
-
-
-  /* Photo grids on large screens */
-  .photogrid{
+  .project-block{
+    border-radius: 0.5%;
+    background-color: #cdcdcd;
+    margin: 0 0 2% 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
-  .image-block{
-    width: 33%;
+  .project-block-component{
+    width: 45%;
+    flex: 1;
   }
 
-  .photogrid .image-block .caption-text{
-    left: 5%;
-  } /* Need to adjust the left-positioning of the hover-in captions, because the size of the grids on large-screens is a little bit larger */
+  #about-section{
+    text-align: left;
+  }
 
-  .photogrid .image-block a img,
-  .photogrid .image-block .caption-text{
-    width: 90%;
+  .flexy-row{
+    display: flex;
+  }
+
+  .tech-logo{
+    width: 10%;
   }
 }

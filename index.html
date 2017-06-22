@@ -11,58 +11,89 @@
 
 <body>
   <header>
-    <div class="section-container">
-      <div id="logo">
-        <h1><a href="index.html">CHRISTOPHER LIU</a></h1>
-      </div>
+    <div class="container">
+      <h1 id="logo">CHRISTOPHER LIU</h1>
 
       <nav id="nav-bar">
         <ul>
-          <li><a class="nav-item" href="index.html">Home</a></li>
-          <li><a class="nav-item" href="about-page.html">About</a></li>
-          <li><a class="nav-item" href="projects-page.html">Projects</a></li>
-          <li><a class="nav-item" href="contact-page.html">Contact</a></li>
+          <li><a class="nav-item" href="index.html">Projects</a></li>
+          <li><a class="nav-item" href="about-page.html">About/Contact</a></li>
         </ul>
       </nav>
+
+      <hr>
     </div>
   </header>
 
-  <section id="jumbotron">
-    <div class="jumbotron-content">
-      <p class="jumbotron-text"> Web Developer & Tech Enthusiast</p>
-      <a class="jumbotron-button" href="projects-page.html">Checkout My Projects</a>
-    </div>
-  </section>
-
-
-  <section id="welcome-section">
-    <div class="section-container">
-
-      <h2 class="section-name"> Christopher Liu | Web Developer </h2>
-      <p> Born and raised in Los Angeles, previously a student of mathematics, now an aspiring web and software developer. </p>
-      <p> Here is a sample of some of the projects I have been working on- more of my work can be found on the projects page. </p>
-
-      <div class="photogrid">
-        <!-- Each of the images in the project blocks are of size 700x480 pixels -->
-        <div class="image-block">
-          <a href="https://christopher-liu.github.io/Tour-Mallorca-Webpage/"> <img src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/fff32e7a-abdc-4f02-92f3-fd720e572cb3_zpsle7vyjul.jpg"> </a>
-          <span class="caption-text">Hola Mallorca Mock Webpage</span>
-        </div>
-
-        <div class="image-block">
-          <a href="https://christopher-liu.github.io/markdown-viewer/"> <img src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/markdownPreviewer_screencap_zps2z1qftpv.jpg?t=1492730023"> </a>
-          <span class="caption-text">Markdown Text Previewer</span>
-        </div>
-
-        <div class="image-block">
-          <a href="https://christopher-liu.github.io/wikipedia-browser/"> <img src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/wikiApp_screencap_zpsdg4cmiym.jpg?t=1492730069"> </a>
-          <span class="caption-text">Wikipedia Browser App</span>
+  <div class="container">
+    <p class="section-title">Projects</p>
+    <div class="project-block">
+      <div class="project-block-component"><img  src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/fff32e7a-abdc-4f02-92f3-fd720e572cb3_zpsle7vyjul.jpg"></div>
+      <div class="project-block-component">
+        <div class="project-block-description">
+          <div class="description-title">Local Weather App</div>
+          <div class="description-text">
+            Single page web app that displays the local weather conditions and forecast. Utilizes two web API's, one for geolocation based on the user's IP and the other for local weather data.
+          </div>
+          <hr>
+          <div class="description-tech">
+            <strong>Tech used:</strong> HTML, CSS, JavaScript, jQuery
+          </div>
+          <hr>
+          <div class="description-buttons">
+            <a href="https://christopher-liu.github.io/local-weather-app">Project Demo</a>
+            <a href="https://github.com/Christopher-Liu/local-weather-app">Code</a>
+          </div>
         </div>
       </div>
-
-
     </div>
-  </section>
+
+
+    <div class="project-block">
+      <div class="project-block-component"><img src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/markdownPreviewer_screencap_zps2z1qftpv.jpg?t=1492730023"></div>
+      <div class="project-block-component">
+        <div class="project-block-description">
+          <div class="description-title">Color Picking Game</div>
+          <div class="description-text">
+            My recreation of the Color Game from Colt Steele's Web Developer Bootcamp course (without the tutorial). This is a game that tests your ability to properly choose colors based on their RGB values.
+          </div>
+          <hr>
+          <div class="description-tech">
+            <strong>Tech used:</strong> HTML, CSS, JavaScript
+          </div>
+          <hr>
+          <div class="description-buttons">
+            <a href="https://christopher-liu.github.io/color-picker-game">Project Demo</a>
+            <a href="https://github.com/Christopher-Liu/color-picker-game">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="project-block">
+      <div class="project-block-component"><img src="http://i1067.photobucket.com/albums/u438/christopherbrianliu/wikiApp_screencap_zpsdg4cmiym.jpg?t=1492730069"></div>
+      <div class="project-block-component">
+        <div class="project-block-description">
+          <div class="description-title">Wikipedia Browser</div>
+          <div class="description-text">
+            Web app that allows you to search for Wikipedia articles based on entered search queries. Utilizes the Mediawiki API to search through Wikipedia articles.
+          </div>
+          <hr>
+          <div class="description-tech">
+            <strong>Tech used:</strong> HTML, CSS, JavaScript, jQuery
+          </div>
+          <hr>
+          <div class="description-buttons">
+            <a href="https://christopher-liu.github.io/wikipedia-browser">Project Demo</a>
+            <a href="https://github.com/Christopher-Liu/wikipedia-browser">Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
 
 </body>
 
