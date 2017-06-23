@@ -1,6 +1,6 @@
 /* main.css */
 body{
-  background: #FAF1E6;
+  background: #F7F7F7;
   margin: 0 0;
   padding: 0 0;
   font-family: 'Quicksand', sans-serif;
@@ -16,7 +16,7 @@ body{
   font-size: 2em;
   font-weight: 700;
   margin: 0 0;
-  padding: 0 0;
+  padding: 1% 2%;
 }
 
 
@@ -56,7 +56,11 @@ header hr{
   width: 90%;
 }
 
-
+#intro-text{
+  font-size: 1.20em;
+  margin: 30px 0;
+  padding: 0 2%;
+}
 
 
 /* CSS for "About" page */
@@ -109,16 +113,13 @@ header hr{
 .project-block-component{
   margin: 0 auto;  /* Centers the image with its caption w/ respect ot the page */
   width: 95%;
+  background-color: #cdcdcd;
 }
 
 .project-block-component img{
   width: 100%;
   display:block; /* Gets rid off odd spacing put under images by HTML */
   border-radius: .75%;
-}
-
-.project-block-description{
-  background-color: #cdcdcd;
 }
 
 .project-block-description hr{
@@ -138,18 +139,21 @@ header hr{
   cursor: pointer;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 6px;
-  background: white;
-  color: black;
+  border-radius: 3px;
+  background-color: #F58F29;
+  color: #000000;
   padding: 4px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  transition: all 0.5s ease;
 }
 
 .description-buttons a:hover{
-  background: black;
-  color: white;
+  background-color: #00417A;
+  color: #F58F29;
+}
+
+.tech-item{
+  border-radius: 3px;
+  background-color: white;
+  padding: 1% 1%;
 }
 
 
@@ -168,9 +172,7 @@ header hr{
   }
 
   .project-block{
-    border-radius: 0.5%;
-    background-color: #cdcdcd;
-    margin: 0 0 2% 0;
+    margin: 2% 0;
     display: flex;
   }
 
@@ -178,6 +180,13 @@ header hr{
     width: 45%;
     flex: 1;
   }
+
+
+  .project-block-component img{
+    width: 95%;
+    padding: 2% 2%;
+    display:block;
+  } /* Having the thumbnail be enveloped by the gray background on large screens */
 
   #about-section{
     text-align: left;
@@ -190,4 +199,10 @@ header hr{
   .tech-logo{
     width: 10%;
   }
+
+  #intro-text,
+  .section-title{
+    padding: 1% 0;
+  }
+
 }
