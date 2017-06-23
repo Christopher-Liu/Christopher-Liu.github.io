@@ -40,7 +40,7 @@ header a:hover{
 
 header #logo{
   font-family: 'Capriola', sans-serif;
-  font-size: 1.7em;
+  font-size: 2em;
 }
 
 header ul{
@@ -101,7 +101,7 @@ header hr{
 
 
 
-/* CSS for the photogrids */
+/* CSS for the project blocks */
 .project-block{
   margin: 0 0 5% 0; /* Space apart the project-blocks vertically */
 }
@@ -154,6 +154,20 @@ header hr{
 
 
 
+/* Footer styling */
+footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 8% 2%;
+  font-size: .95em;
+}
+
+.tm{
+  font-family: 'Capriola', sans-serif;
+}
+
+
+
 /* Media query for larger-screens */
 @media(min-width: 768px){
   .section-name{
@@ -200,5 +214,14 @@ header hr{
   .section-title{
     padding: 1% 0;
   }
+
+
+  footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 8% 0 5% 0;
+    font-size: 1em;
+  }
+
 
 }
