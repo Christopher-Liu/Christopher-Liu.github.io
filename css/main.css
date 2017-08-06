@@ -114,7 +114,7 @@ header hr{
 
 .project-block-component img{
   width: 100%;
-  display:block; /* Gets rid off odd spacing put under images by HTML */
+  display: block; /* Gets rid off odd spacing put under images by HTML */
   border-radius: .75%;
 }
 
