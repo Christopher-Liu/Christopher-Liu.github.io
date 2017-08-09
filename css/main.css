@@ -3,7 +3,7 @@ body{
   background: #F7F7F7;
   margin: 0 0;
   padding: 0 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .container{
@@ -13,8 +13,8 @@ body{
 }  /* This class is supposed to act like Bootstrap's "container" class */
 
 .section-title{
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.75em;
+  font-weight: 600;
   margin: 0 0;
   padding: 1% 2%;
 }
@@ -29,16 +29,16 @@ header{
   text-align: center;
 }
 
-header a{
+.nav-item{
   color: #000000;
   text-decoration: none;
 }
 
-header a:hover{
-  color: #2C8C99;
+.nav-item:hover{
+  color: #00417A;
 }
 
-header #logo{
+.logo{
   font-family: 'Capriola', sans-serif;
   font-size: 2em;
 }
@@ -56,11 +56,68 @@ header hr{
   width: 90%;
 }
 
-#intro-text{
-  font-size: 1.20em;
+
+
+/* Styling for the index.html page */
+.intro-text{
+  font-size: 1.10em;
   margin: 30px 0;
   padding: 0 2%;
 }
+
+
+/* Styling for the project blocks on the index.html page */
+.project-block{
+  margin: 0 0 5% 0; /* Space apart the project-blocks vertically */
+}
+
+.project-block-component{
+  margin: 0 auto;  /* Centers the image with its caption w/ respect ot the page */
+  width: 95%;
+  background-color: #cdcdcd;
+}
+
+.project-block-component img{
+  width: 95%;
+  display: block; /* Gets rid off odd spacing put under images by HTML */
+  padding: 2% 2%;
+}
+
+.description-title,
+.description-text,
+.description-buttons,
+.description-tech{
+  padding: 5px 10px; /* Spaces apart each of the caption items */
+}
+
+.description-title{
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.description-buttons a{
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: #F58F29;
+  color: #000000;
+  border-radius: 3px;
+  padding: 2px;
+} /* This targets the actual buttons themselves */
+
+.description-buttons a:hover{
+  background-color: #00417A;
+  color: #F58F29;
+} /* This targets the actual buttons themselves */
+
+.tech-item{
+  border-radius: 3px;
+  background-color: white;
+  padding: 2px;
+}
+
+
+
 
 
 /* CSS for "About" page */
@@ -101,56 +158,6 @@ header hr{
 
 
 
-/* CSS for the project blocks */
-.project-block{
-  margin: 0 0 5% 0; /* Space apart the project-blocks vertically */
-}
-
-.project-block-component{
-  margin: 0 auto;  /* Centers the image with its caption w/ respect ot the page */
-  width: 95%;
-  background-color: #cdcdcd;
-}
-
-.project-block-component img{
-  width: 100%;
-  display: block; /* Gets rid off odd spacing put under images by HTML */
-  border-radius: .75%;
-}
-
-.project-block-description hr{
-  width: 80%;
-}
-
-.project-block-description div{
-  padding: 3% 3%; /* Spaces apart each of the caption items */
-}
-
-.description-title{
-  font-size: 1.5em;
-  font-weight: 700;
-}
-
-.description-buttons a{
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 3px;
-  background-color: #F58F29;
-  color: #000000;
-  padding: 4px;
-}
-
-.description-buttons a:hover{
-  background-color: #00417A;
-  color: #F58F29;
-}
-
-.tech-item{
-  border-radius: 3px;
-  background-color: white;
-  padding: 1% 1%;
-}
 
 
 
@@ -191,12 +198,12 @@ footer{
     flex: 1;
   }
 
-
-  .project-block-component img{
-    width: 95%;
-    padding: 2% 2%;
-    display:block;
-  } /* Having the thumbnail be enveloped by the gray background on large screens */
+  .description-title,
+  .description-text,
+  .description-buttons,
+  .description-tech{
+    padding: 8px 10px; /* Spaces apart each of the caption items */
+  }
 
   #about-section{
     text-align: left;
