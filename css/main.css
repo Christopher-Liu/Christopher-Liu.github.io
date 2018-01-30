@@ -41,18 +41,19 @@ header{
 .logo{
   font-family: 'Capriola', sans-serif;
   font-size: 2em;
-}
-
-header ul{
   padding: 0 0;
 }
 
-header li{
+.navbar ul{
+  padding: 0 0;
+}
+
+.navbar ul li{
   display: inline;
   padding: 0 5px 0 5px;
 }
 
-header hr{
+hr{
   width: 90%;
 }
 
@@ -121,10 +122,6 @@ header hr{
 
 
 /* CSS for "About" page */
-#about-section hr{
-  width: 90%;
-}
-
 #about-section{
   text-align: center;
 }
