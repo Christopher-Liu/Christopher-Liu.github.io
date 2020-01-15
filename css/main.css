@@ -13,7 +13,7 @@ body{
 }  /* This class is supposed to act like Bootstrap's "container" class */
 
 .section-title{
-  font-size: 1.75em;
+  font-size: 1.30em;
   font-weight: 600;
   margin: 0 0;
   padding: 1% 2%;
@@ -25,11 +25,12 @@ body{
 /* CSS settings for the header/nav (top of the page) */
 header{
   width: 100%;
-  padding: 1px 0 1px 0;
+  padding: 0 0 1% 0;
   text-align: center;
 }
 
 .nav-item{
+  font-size: 1.25em;
   color: #000000;
   text-decoration: none;
 }
@@ -39,19 +40,11 @@ header{
 }
 
 .logo{
-  font-family: 'Capriola', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 2em;
   padding: 0 0;
 }
 
-.navbar ul{
-  padding: 0 0;
-}
-
-.navbar ul li{
-  display: inline;
-  padding: 0 5px 0 5px;
-}
 
 hr{
   width: 90%;
@@ -60,10 +53,10 @@ hr{
 
 
 /* Styling for the index.html page */
-.intro-text{
+.about-text{
   font-size: 1.10em;
   margin: 30px 0;
-  padding: 0 2%;
+  padding: 0 0;
 }
 
 
@@ -99,15 +92,16 @@ hr{
 .description-buttons a{
   cursor: pointer;
   text-decoration: none;
-  font-weight: 600;
-  background-color: #F58F29;
-  color: #000000;
+  font-weight: 400;
+  background-color: #033E6B;
+  color: #66A3D2;
   border-radius: 3px;
   padding: 2px;
+  margin: 0 5px;
 } /* This targets the actual buttons themselves */
 
 .description-buttons a:hover{
-  background-color: #00417A;
+  background-color: #033E6B;
   color: #F58F29;
 } /* This targets the actual buttons themselves */
 
@@ -121,13 +115,9 @@ hr{
 
 
 
-/* CSS for "About" page */
-#about-section{
-  text-align: center;
-}
-
+/* CSS for "Projects" page */
 .flexy-row .prof-pic{
-  max-width: 300px;
+  max-width: 225px;
   border-radius: 50%;
 }
 
@@ -136,7 +126,7 @@ hr{
 }
 
 .flexy-row .block-one{
-  flex: 1.5;
+  flex: 1;
   order: 1;
 }
 
@@ -167,7 +157,7 @@ footer{
 }
 
 .tm{
-  font-family: 'Capriola', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 
@@ -186,12 +176,11 @@ footer{
   }
 
   .project-block{
-    margin: 2% 0;
-    display: flex;
+    margin: 1% 0;
   }
 
   .project-block-component{
-    width: 45%;
+    width: 100%;
     flex: 1;
   }
 
@@ -199,10 +188,10 @@ footer{
   .description-text,
   .description-buttons,
   .description-tech{
-    padding: 8px 10px; /* Spaces apart each of the caption items */
+    padding: 5px 10px; /* Spaces apart each of the caption items */
   }
 
-  #about-section{
+  #contact-section{
     text-align: left;
   }
 
