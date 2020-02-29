@@ -12,13 +12,16 @@ body{
   margin: 0 auto;
 }  /* This class is supposed to act like Bootstrap's "container" class */
 
-.section-title{
-  font-size: 1.30em;
+.page-title{
+  font-size: 2em;
   font-weight: 600;
-  margin: 0 0;
-  padding: 1% 2%;
+  text-align: center;
 }
 
+.section-title{
+  font-size: 1.5em;
+  font-weight: 600;
+}
 
 
 
@@ -65,59 +68,43 @@ hr{
   font-size: 1.10em;
   margin: 30px 0;
   padding: 0 0;
+  display: block;
 }
 
 
 /* Styling for the project blocks on the index.html page */
 .project-block{
   margin: 0 0 5% 0; /* Space apart the project-blocks vertically */
+  display: block;
 }
 
 .project-block-component{
-  margin: 0 auto;  /* Centers the image with its caption w/ respect ot the page */
-  width: 95%;
-  background-color: #cdcdcd;
+  width: 100%;
 }
 
 .project-block-component img{
-  width: 95%;
+  width: 80%;
+  margin: 0 auto;
   display: block; /* Gets rid off odd spacing put under images by HTML */
-  padding: 2% 2%;
 }
 
-.description-title,
-.description-text,
-.description-buttons,
-.description-tech{
-  padding: 5px 10px; /* Spaces apart each of the caption items */
-}
 
 .description-title{
-  font-size: 1.5em;
+  font-size: 1.30em;
   font-weight: 600;
 }
+
 
 .description-buttons a{
   cursor: pointer;
   text-decoration: none;
-  font-weight: 400;
-  background-color: #033E6B;
-  color: #66A3D2;
-  border-radius: 3px;
-  padding: 2px;
-  margin: 0 5px;
+  color: #000000;
+  font-weight: 550;
 } /* This targets the actual buttons themselves */
 
 .description-buttons a:hover{
-  background-color: #033E6B;
   color: #F58F29;
 } /* This targets the actual buttons themselves */
-
-.tech-item{
-  border-radius: 3px;
-  background-color: white;
-  padding: 2px;
-}
 
 
 
@@ -157,13 +144,6 @@ hr{
 
 
 /* Footer styling */
-/* 
-footer{
-  display: flex;
-  justify-content: space-between;
-  margin: 8% 2%;
-  font-size: .95em;
-} */
 
 footer{
   text-align: center;
@@ -188,22 +168,23 @@ footer{
     align-items: center;
   }
 
-
-  .project-block{
-    margin: 1% 0;
+  .page-title{
+    font-size: 2.5em;
   }
 
+
+
   .project-block-component{
-    width: 100%;
     flex: 1;
   }
 
-  .description-title,
-  .description-text,
-  .description-buttons,
-  .description-tech{
-    padding: 5px 10px; /* Spaces apart each of the caption items */
+  .project-block-component img{
+    margin: 0 0;
+    width: 50%;
+    display: block; /* Gets rid off odd spacing put under images by HTML */
   }
+
+
 
   #contact-section{
     text-align: left;
