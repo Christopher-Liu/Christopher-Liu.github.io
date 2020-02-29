@@ -1,6 +1,6 @@
 /* main.css */
 body{
-  background: #F7F7F7;
+  background: ##fafcff;
   margin: 0 0;
   padding: 0 0;
   font-family: 'Calibri', sans-serif;
@@ -8,7 +8,7 @@ body{
 
 .container{
   padding: 0 1%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 }  /* This class is supposed to act like Bootstrap's "container" class */
 
@@ -29,19 +29,27 @@ header{
   text-align: center;
 }
 
+nav{
+
+}
+
 .nav-item{
   font-size: 1.25em;
-  color: #000000;
-  text-decoration: none;
+  width = 100%;
 }
 
 .nav-item:hover{
-  color: #00417A;
+  background-color: #f2f7ff;
+}
+
+.nav-item a{
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo{
   font-family: 'Lato', sans-serif;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 0 0;
 }
 
@@ -131,7 +139,7 @@ hr{
 }
 
 .flexy-row .block-two{
-  flex: 2;
+  flex: 4;
   order: 2;
 }
 
@@ -149,11 +157,16 @@ hr{
 
 
 /* Footer styling */
+/* 
 footer{
   display: flex;
   justify-content: space-between;
   margin: 8% 2%;
   font-size: .95em;
+} */
+
+footer{
+  text-align: center;
 }
 
 .tm{
@@ -174,6 +187,7 @@ footer{
     flex-flow: wrap;
     align-items: center;
   }
+
 
   .project-block{
     margin: 1% 0;
@@ -208,13 +222,13 @@ footer{
     padding: 1% 0;
   }
 
-
+/*
   footer{
     display: flex;
     justify-content: space-between;
     margin: 8% 0 5% 0;
     font-size: 1em;
   }
-
+*/
 
 }
