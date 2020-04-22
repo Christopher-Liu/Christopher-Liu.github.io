@@ -57,9 +57,9 @@
 
           <span class="project-block">
             <span class="project-block-component">
-              <p class="description-title"><a href='https://github.com/Christopher-Liu/nestedCV'>Nested Cross Validation - R Package</a></p>
+              <p class="description-title"><a href='https://github.com/Christopher-Liu/bikeshare-ts-analysis/blob/master/1-Data_Aggregation_and_EDA.ipynb'>Bike Rental Time Series Analysis and Forecasting</a></p>
               <span class="description-text">
-                R package for performing nested cross validation in order to do simultaneous model training and model performance assessment. In certain situations, "regular" cross validation potentially leads to optimistically biased estimates of a model's true test set performances (<a href='https://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-7-91'>Varma et al., 2006</a>), hence the need to adjustments to provide for more accurate, unbiased estimates.
+                An end-to-end analysis and of bicycle rental data from <a href='https://www.capitalbikeshare.com/system-data'>Capital Bikeshare</a>, a bicycle sharing company operating in the Washington DC metro area, that goes all the way back to 2013. Since the full data set was larger than the available amount of memory, data aggregation and transformation with regular in-memory tools was not possible, so PostgreSQL was utilized for loading and aggregating the data in chunks. Exponential smoothing and ARIMA time series methods were then applied to produce accurate models that fit the data to within 8% error and provided robust forecasts of expected bicycle rentals in the coming year. All of the data exploration and analysis was done with Python and its associated data analysis libraries (pandas, NumPy, matplotlib), and the time series modeling was done with the <a href='https://www.statsmodels.org/stable/index.html'>statsmodels</a> library.
               </span>
             </span>
           </span>
